@@ -11,6 +11,9 @@ import { Carousel } from "react-responsive-carousel";
 import { FaSortDown } from 'react-icons/fa';
 //import { useTranslation } from "react-i18next";
 import { FaLeaf } from 'react-icons/fa';
+// import centerimg from "./../../public/images/centerimage.png"
+// import farmer_street from "./../images/farmers-street-market-city.webp"
+// import image_7 from "./../images/image_7.webp"
 
 <link href="https://www.fontzip.com/storage/2018/03/13/spring-in-my-step/webfonts/Spring In My Step.css" rel="stylesheet" />
 const Home = () => {
@@ -50,8 +53,8 @@ const Home = () => {
   const navigate = useNavigate()
   return (
     <div className='home_container'>
-      <div className='first_section'>
-        <Carousel infiniteLoop>
+      {/* <div className='first_section'> */}
+        {/* <Carousel infiniteLoop>
           <div className='image image1'>
 
             <img src='./images/centerimagenew.png' alt='hero' />
@@ -82,19 +85,113 @@ const Home = () => {
           </div>
           
           
-        </Carousel>
-             
-
+        </Carousel> */}
+         {/* <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
+        <div className="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={0} className="active" aria-current="true" aria-label="Slide 1" />
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={1} aria-label="Slide 2" />
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={2} aria-label="Slide 3" />
+        </div>
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src="./../../public/images/centerimagecrop.png" className="d-block w-100" alt="..." />
+            <div className="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <img src="..." className="d-block w-100" alt="..." />
+            <div className="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <img src="..." className="d-block w-100" alt="..." />
+            <div className="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true" />
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true" />
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div> */}
+        {/* <div className='image1'>
+      <img src='./images/centerimage.png' alt='hero'/>
+      <h1 className='image1head'>Evolutionizing the Stall Booking for Direct Sale</h1>
+      <p className="image1text">Independent farmers can book stalls on wingrow, which connects them with nearby consumers and
+         does so in a few simple steps. Consumers get access to produce direct from farms which is much fresher and lasts longer, at reasonable prices.</p>
+      <button onClick={() => { navigate('/farmers/') }} >Book Stall</button>
       </div>
-  
+              */}
+
+      {/* </div> */}
+    <div id="carouselExampleCaptions" className="carousel slide " data-bs-ride="carousel">
+   <div className="carousel-indicators">
+     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={0} className="active" aria-current="true" aria-label="Slide 1" />
+     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={1} aria-label="Slide 2" />
+     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={2} aria-label="Slide 3" />
+   </div>
+   <div className="carousel-inner">
+     <div className="carousel-item active carousel22">
+       <img src='./images/centerimagenew.png' className="d-block w-100" alt="..." />
+       <div className="carousel-caption cc">
+         <h3 className="Label">Evolutionizing the Stall Booking for direct Sale</h3>
+         <p className="caption">Independent farmers can book stalls on wingrow, which connects them with nearby consumers and
+         does so in a few simple steps</p>
+         <button className="navigate" onClick={() => { navigate('/farmers/') }}>Book Stall</button>
+       </div>
+     </div>
+     <div className="carousel-item carousel22">
+       <img src='./images/image_7.webp' className="d-block w-100" alt="..." />
+       <div className="carousel-caption cc">
+         <h3 className="Label">Fresh and natural ingredients straight from farm</h3>
+         <p className="caption">Middlemen offer lower prices to farmers and charge higher prices from the consumers, our aim is to remove middleman</p>
+         <button className="navigate" onClick={() => { navigate('/farmers/') }}>Book Stall</button>
+       </div>
+     </div>
+     <div className="carousel-item carousel22">
+       <img src='./images/farmers-street-market-city.webp' className="d-block w-100" alt="..." />
+       <div className="carousel-caption cc">
+         <h3 className="Label">Fruits and Vegetables are provided directly from farmers</h3>
+         <p className="caption">Wingrow helps farmers to sell their produces at right prices and understand the requirements of consumer before hand!</p>
+         <button className="navigate" onClick={() => { navigate('/farmers/') }}>Book Stall</button>
+       </div>
+     </div>
+   </div>
+   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+     <span className="carousel-control-prev-icon" aria-hidden="true" />
+     <span className="visually-hidden">Previous</span>
+   </button>
+   <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+     <span className="carousel-control-next-icon" aria-hidden="true" />
+     <span className="visually-hidden">Next</span>
+   </button>
+ </div>
+
       {!mobile ?
         <div className='second_section_wrapper'>
+        
           <div className='second_section_aboutus'>
+            <div className='flex'>
+            <div className='ellipse'></div>
             <h2 className='h2_style'>About Us </h2>
+            </div>
+            <div className="about-details">
             <p className='p_style'>We offer nutrient rich, toxin free food to our customers, while enriching the lives of farmers and helping them to live in a better lifestyle. We strive to help farmers with helping them to use good agricultural practices for increasing productivity resulting in a better revenue. </p>
+            <img src='./images/image_8.webp' alt='img' className='image_8' />
           </div>
+            </div>
           <div className='second_section'>
-            <div data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" className='second_section_component'>
+            <div data-aos="zoom-in" data-aos-offset="150" data-aos-easing="ease-in-sine" className='second_section_component'>
               <img src='./images/FPO.webp' alt='img' className='second_section_img' />
 
 
@@ -104,7 +201,7 @@ const Home = () => {
               <img src='https://cdn-icons-png.flaticon.com/512/664/664866.png' alt='img' className='second_section_img' />
             </div>
 
-            <div data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" className='second_section_component'>
+            <div data-aos="zoom-in" data-aos-offset="150" data-aos-easing="ease-in-sine" className='second_section_component'>
               <img src='./images/WIN.webp' alt='img' className='second_section_img' />
             </div>
 
@@ -112,7 +209,7 @@ const Home = () => {
               <img src='https://cdn-icons-png.flaticon.com/512/3183/3183354.png' alt='img' className='second_section_img' />
             </div>
 
-            <div data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" className='second_section_component'>
+            <div data-aos="zoom-in" data-aos-offset="150" data-aos-easing="ease-in-sine" className='second_section_component'>
               <img src='./images/CONS.webp' alt='img' className='second_section_img' />
             </div>
           </div>
@@ -147,6 +244,9 @@ const Home = () => {
         </div>
       }
 
+      {/* <div className='second_sub_section'>
+         */}
+
 
       <div className='third_section'>
         <div className="third_section_details">
@@ -178,7 +278,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className='footer'>
       <Footer />
+      </div>
     </div>
   )
 }

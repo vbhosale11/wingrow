@@ -119,4 +119,12 @@ a {
     }
 }
 
+.third_section h1{
+    padding-bottom: 1.5rem;
+}
+.about-details{
+    height: 25rem;
+}
+
+
 /* new footer */

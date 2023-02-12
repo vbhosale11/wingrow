@@ -21,13 +21,14 @@
 
 }
 
-.carousel {
+/* .carousel {
   display: flex;
   justify-content: center;
   margin-top: 0%;
   padding-top:0%;
 
-}
+} */
+
  .center {
   flex: 80%;
   height: 100%;
@@ -38,7 +39,7 @@
   text-align-last: center;
   color: #4F46E5;
 }
-.carousel .thumbs-wrapper {
+/* .carousel .thumbs-wrapper {
   display: none;
 }
 
@@ -49,7 +50,7 @@
   position: relative;
   
   }
-  
+   */
 
 .image1 , .image2 , .image3 , .image4 , .image5 {
   position: relative;
@@ -133,7 +134,81 @@
   z-index: 1;
 
 }
-.carousel .slide::before {
+
+.carousel22{
+  width:100%;
+   height:550px;
+}
+.carousel22 img{
+  width:100%;
+  height:100%;
+  opacity:0.75;
+}
+.Label{
+  font-family: 'Roboto', sans-serif;
+   color:#0a0606;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+.caption{
+  color:#0a0606;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+.cc{
+  text-align: left;
+  padding-bottom: 30.25rem;
+  bottom:0rem;
+  left:5rem;
+  width:40%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+}
+@media only screen and  (max-width: 780px) {
+  .cc{
+    top:3rem;
+    left:2rem;
+    right:2rem;
+    margin: auto;
+    width:70%;
+    text-align: center;
+  }
+  .navigate{
+    margin-top:  15rem;
+    margin-left: 7rem;
+
+  }
+}
+.carousel-control-prev,.carousel-control-next{
+  width: 5%;
+  color:#0a0606;
+}
+
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") 
+}
+.carousel-control-next-icon{
+  transform: rotate(180deg);
+}
+.navigate{
+  position: absolute;
+  top: 40%;
+  left: 14%;
+  transform: translate(-50%, -50%);
+  background-color: #E03538;
+  padding: 0.6rem;
+   padding-left:1.5rem;
+    padding-right:1.5rem;
+    font-weight: bold;
+    font-size:1.5rem;
+    font-family: 'Roboto', sans-serif;
+   border:0px;
+   color: #FAF3F6;
+  
+}
+
+/* .carousel .slide::before {
   content: "";
     position: absolute;
     top: 50%;
@@ -141,7 +216,7 @@
     transform: translate(-50%, -50%);
     color: white;
     z-index: 1;
-}
+} */
 .first_section_component{
   display: flex; 
   margin-bottom: 4rem; 
@@ -217,19 +292,85 @@
 }
 
 .second_section_wrapper{
+  padding-top: 5%;
   display: flex;
   flex-direction: column;
 }
 
-.second_section_aboutus{
+/* .second_section_aboutus{
+  padding-top: 2%;
+  padding-right: 50% ;
   height: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
   margin-top: 1rem;
+} */
+/* 
+.second_section_aboutus{
+  display:flex;
+
+} */
+.about-details{
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  /* align-items:center; */
+}
+.second_section_aboutus h2{
+  /* About Us */
+padding-left: 1rem;
+display:block;
+font-style: normal;
+font-weight: bold;
+font-size: 2.5rem;
+line-height: 64px;
+/* identical to box height */
+color: #000000;
+}
+
+.second_section_aboutus p{
+  line-height: 1.7;
+  /* display:inline-block; */
+  width: 40%;
+  /* padding-left: 12rem; */
+  font-weight: lighter;
+  font-family: 'Roboto', sans-serif;
+  /* transform:translate(-50%,-50%); */
+  color:black;
+  font-size:2rem;
+  text-align:left;
+  margin-bottom: 20%;
   
+}
+
+.second_section_aboutus .image_8{
+  margin-top: 0;
+  padding-top: 0;
+  /* padding-bottom: 19rem;; */
+  width: 20%;
+  height:300px
+  /* height: 50%; */
+  /* display: inline-block; */
+}
+
+@media only screen and (max-width: 768px){
+  .second_section_aboutus p{
+    width: 100%;
+    text-align: center; 
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin:0;
+  }
+  .ellipse{
+    display: none;
+  }
+  .second_section_aboutus h2{
+    text-align: center;
+  }
 }
 
 .second_section{
@@ -242,6 +383,15 @@
   align-items: center;
 }
 
+.ellipse{
+width: 20px;
+height: 20px;
+margin-left: 12%;
+background: #E03538;
+margin-top: 2rem;
+border-radius: 0;
+}
+
 .second_section_component{
   width: 100%;
   height: 25%;
@@ -252,6 +402,10 @@
 .second_section_component_arrow{
   width: 12%;
   height: 100%;
+}
+
+.flex{
+  display: flex;
 }
 
 .second_section_img{
@@ -310,6 +464,7 @@
 /* ******************************* */
 
 .fourth_section {
+  margin-bottom: 15rem;
   display: flex;
   background-color: #FAF3F6;
   max-height: 30rem;
@@ -659,9 +814,9 @@ background-color: transparent;
 
 
 @media (max-width: 640px) {
-.second_section_aboutus{
+/* .second_section_aboutus{
   font-size: 1.3rem;
-}
+} */
 
 .first_section_header{
   font-size: 1.5rem;
@@ -765,4 +920,75 @@ background-color: transparent;
   margin-left: 2rem;
   margin-right: 2rem;
 }
+}
+
+
+.first_section img{
+  position:relative;
+  width:100vw;
+  height:85vh;
+}
+
+.first_section h1{
+  position:absolute;
+  top:20%;
+  left:5%;
+  right:50%;
+  padding-bottom: 0;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  /* transform:translate(-50%,-50%); */
+  color:black;
+  font-size:3rem;
+  text-align:left;
+}
+.first_section button{
+    position:absolute;
+    top:70%;
+    left:5%;
+    right:85%;
+    border-radius: 50px;
+
+    background-color:  #E03538; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 32px;/* Some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the buttons appear on the same line */
+    font-size: 16px; /* Set font size */
+    transition: all 0.5s;
+    cursor: pointer;
+    animation: size 0.5s;
+}
+
+.first_section p{
+  position:absolute;
+  line-height: 1.7;
+  top:40%;
+  left:5%;
+  width:30%;
+  padding-bottom: 0;
+  font-weight: lighter;
+  font-family: 'Roboto', sans-serif;
+  /* transform:translate(-50%,-50%); */
+  color:black;
+  font-size:1.5rem;
+  text-align:left;
+}
+@keyframes size {
+  /* Start with the original size */
+  from {
+    transform: scale(1);
+  }
+  /* End with the larger size */
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/* Only play the animation on hover */
+.first_section button:hover {
+  animation-play-state: running;
+  background-color: #3e8e41;
 }
